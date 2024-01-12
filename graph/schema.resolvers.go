@@ -7,7 +7,6 @@ package graph
 import (
 	"context"
 	"fc-graphql/graph/model"
-	"fmt"
 )
 
 // CreateCategory is the resolver for the createCategory field.
@@ -55,7 +54,19 @@ func (r *queryResolver) Categories(ctx context.Context) ([]*model.Category, erro
 
 // Courses is the resolver for the courses field.
 func (r *queryResolver) Courses(ctx context.Context) ([]*model.Course, error) {
-	panic(fmt.Errorf("not implemented: Courses - courses"))
+	courses, err := r.CourseDB.FindAll()
+	if err != nil {
+		return nil, err
+	}
+	var coursesModel []*model.Course
+	for _, course := range courses {
+		coursesModel = append(coursesModel, &model.Course{
+			ID:          course.ID,
+			Name:        course.Name,
+			Description: &course.Description,
+		})
+	}
+	return coursesModel, nil
 }
 
 // Mutation returns MutationResolver implementation.
