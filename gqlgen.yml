@@ -66,7 +66,7 @@ resolver:
 # gqlgen will search for any type names in the schema in these go packages
 # if they match it will use them, otherwise it will generate them.
 autobind:
-#  - "fc-graphql/graph/model"
+#  - "dfc-graphql/graph/model"
 
 # This section declares type mapping between the GraphQL and go type systems
 #
@@ -76,10 +76,10 @@ autobind:
 models:
   Category:
     model:
-      - fc-graphql/graph/model.Category
+      - dfc-graphql/graph/model.Category
   Course:
     model:
-      - fc-graphql/graph/model.Course
+      - dfc-graphql/graph/model.Course
   ID:
     model:
       - github.com/99designs/gqlgen/graphql.ID

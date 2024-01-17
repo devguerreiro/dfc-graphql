@@ -3,8 +3,8 @@ package main
 import (
 	"database/sql"
 
-	"fc-graphql/graph"
-	"fc-graphql/internal/database"
+	"dfc-graphql/graph"
+	"dfc-graphql/internal/database"
 
 	"log"
 	"net/http"

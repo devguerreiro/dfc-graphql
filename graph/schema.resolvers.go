@@ -6,7 +6,7 @@ package graph
 
 import (
 	"context"
-	"fc-graphql/graph/model"
+	"dfc-graphql/graph/model"
 )
 
 // Courses is the resolver for the courses field.

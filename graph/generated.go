@@ -7,7 +7,7 @@ import (
 	"context"
 	"embed"
 	"errors"
-	"fc-graphql/graph/model"
+	"dfc-graphql/graph/model"
 	"fmt"
 	"strconv"
 	"sync"

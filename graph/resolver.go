@@ -1,6 +1,6 @@
 package graph
 
-import "fc-graphql/internal/database"
+import "dfc-graphql/internal/database"
 
 // This file will not be regenerated automatically.
 //

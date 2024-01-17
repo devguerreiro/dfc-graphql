@@ -1,4 +1,4 @@
-module fc-graphql
+module dfc-graphql
 
 go 1.21.6
 
